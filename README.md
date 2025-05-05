@@ -1,45 +1,49 @@
-1. Clone the Repository
+🛠️ Setup & Installation
+🔗 Clone the Repository
+Clone the repository from GitHub:
+https://github.com/alvinjr11/RealtimeDashboard1.git
+Then navigate into the project folder:
+cd RealtimeDashboard1
 
-   https://github.com/alvinjr11/RealtimeDashboard1.git
-   cd your-repo-name
+📦 Install Dependencies
+Backend:
+Navigate to the server folder and install dependencies using:
+cd server → npm install
 
-2. Install dependencies
-    For Backend
-    cd server
-   npm install
+Frontend:
+Navigate to the client folder and install dependencies using:
+cd ../client → npm install
 
-   For Frontend 
-   cd ../client
-   npm install
+⚙️ Configure Environment Variables
+Backend (server/.env):
+Create a .env file in the server folder with the following values:
 
-3.   3. Configure environment variables
-    Backend (server/.env)
+MONGODb_URI: your MongoDB connection URI
 
-    MONGODb_URI=mongodb+srv://aloshmathew4:4LEywHO8hGUs4zlv@cluster0.mmsvbdr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-    MAIL_USER=alvinmathew17@gmail.com
-    MAIL_PASS=zplgzduamtdwzkcc
-    JWT_SECRET="QKSMDJDNNFHHFHJMSNJENNMSMSJDNNDHDHDDDDDFF"
-    FRONTEND_URL=http://localhost:5173
+MAIL_USER: your email address for sending OTPs
 
-    Frontend (client/.env)
+MAIL_PASS: your email password or app-specific password
 
-    VITE_API_BASE_URL=http://localhost:5000
+JWT_SECRET: your JWT signing secret
 
-4. Start the servers
-   Backend
+FRONTEND_URL: http://localhost:5173
 
-    cd server
-    npm run dev
+Frontend (client/.env):
+Create a .env file in the client folder with:
 
-   Frontend
+VITE_API_BASE_URL: http://localhost:5000
 
-   cd ../client
-   npm run dev
+▶️ Start the Servers
+To run the backend server:
+Navigate to server and run npm run dev
 
-5. Start the sensor simulator
+To run the frontend app:
+Navigate to client and run npm run dev
 
-   cd server
-   npm run simulate-data
+📡 Start the Sensor Simulator
+To start the real-time data simulator, run the following in the server folder:
+npm run simulate-data
+
 
 
      
