@@ -18,9 +18,9 @@ cd ../client → npm install
 Backend (server/.env):
 Create a .env file in the server folder with the following values:
 
-MONGODb_URI: your MongoDB connection URI
+MONGODb_URI: mongodb+srv://aloshmathew4:4LEywHO8hGUs4zlv@cluster0.mmsvbdr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
-MAIL_USER: your email address for sending OTPs
+MAIL_USER: yourmail
 
 MAIL_PASS: your email password or app-specific password
 
